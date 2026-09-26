@@ -1,0 +1,3 @@
+docker run -d -p 80:80 docker/getting-started
+
+docker run -dp 3000:3000 getting-started

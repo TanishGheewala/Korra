@@ -54,6 +54,7 @@ Usage Instructions:
        A missing key raises ConfigError naming which one is absent.
 """
 
+# Switched to Gemini
 
 # ============================================================
 # IMPORTS

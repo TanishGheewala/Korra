@@ -41,7 +41,7 @@ Description:
 
 Usage Instructions:
     1. Create a .env file beside this script containing:
-           OPENAI_API_KEY=your_openai_key
+           GOOGLE_API_KEY=your_openai_key
            TAVILY_API_KEY=your_tavily_key
     2. Install dependencies:
            pip install -r requirements.txt
@@ -70,7 +70,7 @@ from dotenv import load_dotenv
 from typing_extensions import TypedDict
 
 from langchain_core.messages import BaseMessage, HumanMessage
-from langchain_openai import ChatOpenAI
+from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_tavily import TavilySearch
 from langgraph.graph import START, StateGraph
 from langgraph.graph.message import add_messages
@@ -124,7 +124,7 @@ logging.getLogger("openai").setLevel(logging.WARNING)
 # ENVIRONMENT
 # ============================================================
 
-OPENAI_API_KEY = None
+GOOGLE_API_KEY = None
 TAVILY_API_KEY = None
 
 
@@ -137,22 +137,22 @@ def configure() -> None:
     would leave the graph asking for a key that is not there yet.
 
     Raises:
-        ConfigError: If OPENAI_API_KEY or TAVILY_API_KEY is not set.
+        ConfigError: If GOOGLE_API_KEY or TAVILY_API_KEY is not set.
 
     Returns:
         None
     """
-    global OPENAI_API_KEY, TAVILY_API_KEY
+    global GOOGLE_API_KEY, TAVILY_API_KEY
 
     # override=False keeps a key already exported in the shell
     load_dotenv(override=False)
 
-    OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+    GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
     TAVILY_API_KEY = os.getenv("TAVILY_API_KEY")
 
     missing = [
         name
-        for name, value in (("OPENAI_API_KEY", OPENAI_API_KEY),
+        for name, value in (("GOOGLE_API_KEY", GOOGLE_API_KEY),
                             ("TAVILY_API_KEY", TAVILY_API_KEY))
         if not value
     ]
@@ -204,7 +204,11 @@ def initialize_chatbot() -> CompiledStateGraph:
     Returns:
         CompiledStateGraph: A graph ready to accept invoke() calls.
     """
-    llm = ChatOpenAI(model=DEFAULT_MODEL, temperature=TEMPERATURE)
+    llm = ChatGoogleGenerativeAI(
+    model="gemini-3.5-flash-lite",
+    temperature=1.0,
+    vertexai=False,
+)
     search_tool = TavilySearch(max_results=MAX_SEARCH_RESULTS)
 
     # Binding advertises the tool to the model so it can request a search

@@ -15,7 +15,7 @@
 # ============================================================
 
 python-dotenv
-langchain-openai
+langchain-google-genai
 langchain-tavily
 langchain-core
 langgraph

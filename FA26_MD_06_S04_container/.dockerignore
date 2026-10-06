@@ -1,0 +1,60 @@
+# ============================================================
+# Filename: .dockerignore
+# Author: Professor Denis O. Nunez
+# Email: donunez@programmingjourneys.com
+# Organization: Programming Journeys
+# Project: Project 06 - Korra: AI Chatbot
+# Module: Module 06 - Programming-Related Topics
+# Layer: Deployment - Container
+# Date Created: October 15, 2025
+# Date Modified: September 23, 2026
+# Version: 3.0
+# License: Educational Use
+#
+# Description: Excludes unnecessary files from the Docker build context
+# ============================================================
+
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Git files
+.git/
+.gitignore
+
+# Documentation
+README.md
+*.md
+
+# Output files
+output/
+*.png
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker files (don't copy these into the image)
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+.env
+.env.*

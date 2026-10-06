@@ -1,0 +1,42 @@
+# ============================================================
+# Filename: docker-compose.yml
+# Author: Professor Denis O. Nunez
+# Email: donunez@programmingjourneys.com
+# Organization: Programming Journeys
+# Project: Project 06 - Korra: AI Chatbot
+# Module: Module 06 - Programming-Related Topics
+# Layer: Deployment - Container
+# Date Created: October 15, 2025
+# Date Modified: September 23, 2026
+# Version: 3.0
+# License: Educational Use
+#
+# Description: Orchestration configuration for running Korra
+# ============================================================
+
+version: '3.8'
+
+services:
+  korra:
+    # Build from local Dockerfile
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: korra-phase-01
+    # Container name
+    container_name: korra-phase-01
+    
+    # Load environment variables from .env file
+    env_file:
+      - .env
+    
+    # Interactive terminal mode for chatbot
+    stdin_open: true
+    tty: true
+    
+    # Mount volume for persistent graph output
+    volumes:
+      - ./output:/app/output
+    
+    # Restart policy
+    restart: unless-stopped

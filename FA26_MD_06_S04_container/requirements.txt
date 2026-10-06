@@ -1,0 +1,22 @@
+# ============================================================
+# Filename: requirements.txt
+# Author: Professor Denis O. Nunez
+# Email: donunez@programmingjourneys.com
+# Organization: Programming Journeys
+# Project: Project 06 - Korra: AI Chatbot
+# Module: Module 06 - Programming-Related Topics
+# Layer: Deployment - Container
+# Date Created: October 15, 2025
+# Date Modified: September 23, 2026
+# Version: 3.0
+# License: Educational Use
+#
+# Description: Python dependencies for the Korra AI chatbot
+# ============================================================
+
+python-dotenv
+langchain-openai
+langchain-tavily
+langchain-core
+langgraph
+typing-extensions

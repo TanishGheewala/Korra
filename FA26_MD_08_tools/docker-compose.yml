@@ -1,0 +1,8 @@
+services:
+  korra:
+    build: .
+    image: korra-project08
+    env_file:
+      - .env
+    stdin_open: true
+    tty: true

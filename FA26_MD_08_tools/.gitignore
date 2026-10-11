@@ -1,0 +1,10 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+*.o
+*.exe
+**/file_stats
+**/test_file_stats
+.venv/

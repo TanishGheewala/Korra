@@ -1,0 +1,75 @@
+# ============================================================
+# Filename: docker-compose.yml
+# Author: Professor Denis O. Núñez
+# Email: donunez@programmingjourneys.com
+# Organization: Programming Journeys
+# Project: Project 09 - Korra: MCP Server and User Interface
+# Module: Module 09 - Interfacing and Communication
+# Layer: Deployment - Orchestration
+# Date Created: October 4, 2026
+# Date Modified: October 4, 2026
+# Version: M09S04
+# License: Educational Use
+#
+# Requirements:
+#     Docker Desktop
+#
+# Description:
+#     Runs the two halves of Korra as one system: the LangGraph backend with
+#     its three tool nodes, and the Agent UI that talks to it.
+#
+#     The backend reads its keys from korra/.env at run time instead of
+#     having them built into the image, so the image can be rebuilt and
+#     shared without carrying secrets.
+#
+#     The front end gets its address as a build argument rather than an
+#     environment variable, because Next.js compiles NEXT_PUBLIC_ values into
+#     the browser bundle while the image is being built.
+#
+# Usage Instructions:
+#     Place this file in the folder holding korra/ and agent-chat-ui/, then:
+#         docker compose up --build
+#     The UI is on http://localhost:3000 and the API on http://localhost:2024.
+#     Stop and remove both containers with:
+#         docker compose down
+# ============================================================
+
+services:
+  backend:
+    build:
+      context: ./korra
+      dockerfile: Dockerfile
+    container_name: korra-backend
+    ports:
+      - "127.0.0.1:2024:2024"
+    # Keys are supplied here, not copied into the image
+    env_file:
+      - ./korra/.env
+    networks:
+      - korra-network
+
+  frontend:
+    build:
+      context: ./agent-chat-ui
+      dockerfile: Dockerfile
+      args:
+        # localhost, not backend. This address is used by JavaScript running
+        # in the student's browser, which is outside Docker and cannot
+        # resolve a service name. It reaches the backend because the port
+        # above is published onto the host
+        NEXT_PUBLIC_API_URL: http://localhost:2024
+        # Must match the graph name in korra/langgraph.json
+        NEXT_PUBLIC_ASSISTANT_ID: agent
+    container_name: korra-frontend
+    ports:
+      - "127.0.0.1:3000:3000"
+    # Only orders the startup; it does not wait for the backend to be ready.
+    # The UI tolerates that, because it connects when a message is sent
+    depends_on:
+      - backend
+    networks:
+      - korra-network
+
+networks:
+  korra-network:
+    driver: bridge

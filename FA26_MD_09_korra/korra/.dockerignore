@@ -1,0 +1,62 @@
+# ============================================================
+# Filename: .dockerignore
+# Author: Professor Denis O. Núñez
+# Email: donunez@programmingjourneys.com
+# Organization: Programming Journeys
+# Project: Project 09 - Korra: MCP Server and User Interface
+# Module: Module 09 - Interfacing and Communication
+# Layer: Deployment - Container
+# Date Created: October 4, 2026
+# Date Modified: October 4, 2026
+# Version: M09S04
+# License: Educational Use
+#
+# Description:
+#     Keeps the backend build context small and keeps Windows build output
+#     out of a Linux image. Copy into the korra folder as ".dockerignore"
+#     with the leading dot.
+#
+#     Two kinds of pattern below, and the difference matters. Docker matches
+#     a pattern against the whole path and a * does not cross a directory
+#     separator, so a bare name matches only at the top of the context. The
+#     **/ prefix is what reaches further down.
+#
+#     That is why *.exe alone is not enough: the Windows binary sits five
+#     folders deep, the wrapper looks for that name before the Linux one,
+#     and an image built without this rule finds a binary it cannot run.
+#
+#     The template leftovers are listed without **/ on purpose, so the
+#     tools folder keeps its own Makefile and tests, which the build needs
+#     to compile the C tool and run its checks.
+# ============================================================
+
+# Windows and local build output, at any depth
+**/*.exe
+**/*.o
+**/__pycache__
+**/*.pyc
+**/*.egg-info
+
+# Keys arrive through env_file at run time, never baked into the image
+.env
+.env.*
+!.env.example
+**/file_stats
+**/test_file_stats
+.venv
+
+# Local dev-server state, meaningless inside a container
+.langgraph_api
+
+# Template leftovers from langgraph new. Top level only: src/react_agent/
+# tools keeps its own Makefile and tests
+.git
+.github
+.gitignore
+.codespellignore
+LICENSE
+Makefile
+README.md
+static
+tests
+uv.lock

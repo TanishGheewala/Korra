@@ -1,0 +1,9 @@
+python-dotenv>=1,<2
+langchain-google-genai>=4,<5
+langchain-tavily>=0.2,<1
+langchain-core>=1,<2
+langgraph>=1,<2
+langchain-mcp-adapters>=0.2,<0.3
+langgraph-cli[inmem]
+typing-extensions
+mcp>=1.9.2,<2

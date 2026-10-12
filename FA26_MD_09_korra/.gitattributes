@@ -1,0 +1,7 @@
+*.py text eol=lf
+*.c text eol=lf
+*.h text eol=lf
+Makefile text eol=lf
+# Preserve exact fixture bytes and counts on Windows.
+korra/src/react_agent/tools/test.txt -text
+korra/src/react_agent/tools/tests/*.txt -text

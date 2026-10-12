@@ -1,0 +1,16 @@
+[project]
+name = "korra-project09"
+version = "0.1.0"
+description = "Korra with Gemini, web search, C file statistics, and GitHub MCP"
+requires-python = ">=3.11"
+dynamic = ["dependencies"]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}

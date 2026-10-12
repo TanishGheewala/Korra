@@ -1,0 +1,15 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+node_modules/
+.next/
+.langgraph_api/
+*.o
+*.exe
+file_stats
+test_file_stats
+*.zip

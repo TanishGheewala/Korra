@@ -1,0 +1,4 @@
+{
+  "dependencies": ["."],
+  "graphs": {"agent": "korra_m10.graph:graph"}
+}

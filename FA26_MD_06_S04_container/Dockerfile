@@ -32,6 +32,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy application files
 COPY FA26_MD_06_S03_chatbot.py .
+COPY FA26_MD_06_S04_sql_demo.py .
 
 # Create directory for graph output
 RUN mkdir -p /app/output

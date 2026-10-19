@@ -1,8 +1,11 @@
 .env
 .env.*
 !.env.example
-__pycache__/
-*.pyc
-.venv/
-.ipynb_checkpoints/
 env/
+.venv/
+__pycache__/
+node_modules/
+*.o
+*.exe
+FA26_MD_07_file_stats/file_stats
+FA26_MD_07_file_stats/test_file_stats

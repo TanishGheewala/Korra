@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["decision_id", "version", "decision"],
+  "additionalProperties": false,
+  "properties": {
+    "decision_id": {"type": "string", "format": "uuid"},
+    "version": {"type": "integer", "minimum": 1},
+    "decision": {"enum": ["approve", "reject", "revise", "cancel"]},
+    "changes": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": false,
+      "properties": {
+        "name": {"type": "string", "minLength": 1, "maxLength": 200},
+        "email": {"type": "string", "format": "email", "maxLength": 254},
+        "major": {"type": "string", "minLength": 1, "maxLength": 200},
+        "gpa": {"type": "number", "minimum": 0, "maximum": 4},
+        "enrollment_date": {"type": "string", "format": "date"}
+      }
+    }
+  },
+  "if": {"properties": {"decision": {"const": "revise"}}},
+  "then": {"required": ["changes"]},
+  "else": {"not": {"required": ["changes"]}}
+}

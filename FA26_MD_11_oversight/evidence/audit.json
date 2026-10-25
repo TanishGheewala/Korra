@@ -1,0 +1,352 @@
+[
+  {
+    "sequence": 1,
+    "timestamp": 1792918851.5971105,
+    "decision_id": "cf1da4f6-8873-42d4-9627-43250f7aee81",
+    "version": 1,
+    "event": "interrupted",
+    "actor": "requester",
+    "status": "pending",
+    "payload_hash": "a3f72d9cb5aa1e718727588e83b6d656a6bf923903b935a2fd2cb104422ff8ba"
+  },
+  {
+    "sequence": 2,
+    "timestamp": 1792918875.8732035,
+    "decision_id": "cf1da4f6-8873-42d4-9627-43250f7aee81",
+    "version": 1,
+    "event": "approved",
+    "actor": "reviewer",
+    "status": "pending",
+    "payload_hash": "a3f72d9cb5aa1e718727588e83b6d656a6bf923903b935a2fd2cb104422ff8ba"
+  },
+  {
+    "sequence": 3,
+    "timestamp": 1792918875.8739946,
+    "decision_id": "cf1da4f6-8873-42d4-9627-43250f7aee81",
+    "version": 1,
+    "event": "resumed_and_saved",
+    "actor": "system",
+    "status": "completed",
+    "payload_hash": "a3f72d9cb5aa1e718727588e83b6d656a6bf923903b935a2fd2cb104422ff8ba"
+  },
+  {
+    "sequence": 4,
+    "timestamp": 1792918875.919523,
+    "decision_id": "cf1da4f6-8873-42d4-9627-43250f7aee81",
+    "version": 1,
+    "event": "duplicate_blocked",
+    "actor": "reviewer",
+    "status": "completed",
+    "payload_hash": "a3f72d9cb5aa1e718727588e83b6d656a6bf923903b935a2fd2cb104422ff8ba"
+  },
+  {
+    "sequence": 5,
+    "timestamp": 1792918875.9384484,
+    "decision_id": "7776707d-e70a-4610-a053-1fe25becddd9",
+    "version": 1,
+    "event": "interrupted",
+    "actor": "requester",
+    "status": "pending",
+    "payload_hash": "c29e5dd49de613540c68d5345e296aac1814d3036401732f591d906f6ce2db4f"
+  },
+  {
+    "sequence": 6,
+    "timestamp": 1792918875.9485543,
+    "decision_id": null,
+    "version": null,
+    "event": "unauthorized",
+    "actor": "unverified",
+    "status": null,
+    "payload_hash": null
+  },
+  {
+    "sequence": 7,
+    "timestamp": 1792918875.9570081,
+    "decision_id": null,
+    "version": null,
+    "event": "invalid_decision",
+    "actor": "reviewer",
+    "status": null,
+    "payload_hash": null
+  },
+  {
+    "sequence": 8,
+    "timestamp": 1792918880.154489,
+    "decision_id": "7776707d-e70a-4610-a053-1fe25becddd9",
+    "version": 1,
+    "event": "reject",
+    "actor": "reviewer",
+    "status": "rejected",
+    "payload_hash": "c29e5dd49de613540c68d5345e296aac1814d3036401732f591d906f6ce2db4f"
+  },
+  {
+    "sequence": 9,
+    "timestamp": 1792918880.1753027,
+    "decision_id": "231e6f16-12fc-464c-a514-49ce6b5dc985",
+    "version": 1,
+    "event": "interrupted",
+    "actor": "requester",
+    "status": "pending",
+    "payload_hash": "05bb5f70b627b21a8654bc9d7ef30b4a7c7322416577288e0b0cf3a56d92bd29"
+  },
+  {
+    "sequence": 10,
+    "timestamp": 1792918892.3375785,
+    "decision_id": null,
+    "version": null,
+    "event": "invalid_decision",
+    "actor": "reviewer",
+    "status": null,
+    "payload_hash": null
+  },
+  {
+    "sequence": 11,
+    "timestamp": 1792918907.7387946,
+    "decision_id": "8afefd53-d7ff-433c-a643-7b8e29f9a7b8",
+    "version": 1,
+    "event": "interrupted",
+    "actor": "requester",
+    "status": "pending",
+    "payload_hash": "ee9c962a9a9c7bf4bfdaf4839a4f502c6ee9cff2c048d7b416947e4b2cb2f233"
+  },
+  {
+    "sequence": 12,
+    "timestamp": 1792918911.1109343,
+    "decision_id": "8afefd53-d7ff-433c-a643-7b8e29f9a7b8",
+    "version": 1,
+    "event": "approved",
+    "actor": "reviewer",
+    "status": "pending",
+    "payload_hash": "ee9c962a9a9c7bf4bfdaf4839a4f502c6ee9cff2c048d7b416947e4b2cb2f233"
+  },
+  {
+    "sequence": 13,
+    "timestamp": 1792918911.1117318,
+    "decision_id": "8afefd53-d7ff-433c-a643-7b8e29f9a7b8",
+    "version": 1,
+    "event": "resumed_and_saved",
+    "actor": "system",
+    "status": "completed",
+    "payload_hash": "ee9c962a9a9c7bf4bfdaf4839a4f502c6ee9cff2c048d7b416947e4b2cb2f233"
+  },
+  {
+    "sequence": 14,
+    "timestamp": 1792918911.188555,
+    "decision_id": "8afefd53-d7ff-433c-a643-7b8e29f9a7b8",
+    "version": 1,
+    "event": "duplicate_blocked",
+    "actor": "reviewer",
+    "status": "completed",
+    "payload_hash": "ee9c962a9a9c7bf4bfdaf4839a4f502c6ee9cff2c048d7b416947e4b2cb2f233"
+  },
+  {
+    "sequence": 15,
+    "timestamp": 1792918911.239646,
+    "decision_id": "97125fa2-9165-43a4-9816-d000d5df0b4e",
+    "version": 1,
+    "event": "interrupted",
+    "actor": "requester",
+    "status": "pending",
+    "payload_hash": "a521d2549bca276319fd0b37064214e5a4920c92caaed58be3f09987ba40d8c8"
+  },
+  {
+    "sequence": 16,
+    "timestamp": 1792918911.2575772,
+    "decision_id": null,
+    "version": null,
+    "event": "unauthorized",
+    "actor": "unverified",
+    "status": null,
+    "payload_hash": null
+  },
+  {
+    "sequence": 17,
+    "timestamp": 1792918911.2694376,
+    "decision_id": null,
+    "version": null,
+    "event": "invalid_decision",
+    "actor": "reviewer",
+    "status": null,
+    "payload_hash": null
+  },
+  {
+    "sequence": 18,
+    "timestamp": 1792918912.5449276,
+    "decision_id": "97125fa2-9165-43a4-9816-d000d5df0b4e",
+    "version": 1,
+    "event": "reject",
+    "actor": "reviewer",
+    "status": "rejected",
+    "payload_hash": "a521d2549bca276319fd0b37064214e5a4920c92caaed58be3f09987ba40d8c8"
+  },
+  {
+    "sequence": 19,
+    "timestamp": 1792918912.563367,
+    "decision_id": "4edf8a95-a8f9-4954-86d0-317ae114cdf7",
+    "version": 1,
+    "event": "interrupted",
+    "actor": "requester",
+    "status": "pending",
+    "payload_hash": "db79f869367440ea5c2066e772dbaedf99db5626dccf2466c8bdc4b1fe125599"
+  },
+  {
+    "sequence": 20,
+    "timestamp": 1792918916.4466171,
+    "decision_id": "4edf8a95-a8f9-4954-86d0-317ae114cdf7",
+    "version": 2,
+    "event": "revised",
+    "actor": "reviewer",
+    "status": "pending",
+    "payload_hash": "788667769840e6b111dbb1e72b3c8a0aa1cd012c2708942613313b0fe4db592c"
+  },
+  {
+    "sequence": 21,
+    "timestamp": 1792918916.4898012,
+    "decision_id": "4edf8a95-a8f9-4954-86d0-317ae114cdf7",
+    "version": 2,
+    "event": "stale_blocked",
+    "actor": "reviewer",
+    "status": "pending",
+    "payload_hash": "788667769840e6b111dbb1e72b3c8a0aa1cd012c2708942613313b0fe4db592c"
+  },
+  {
+    "sequence": 22,
+    "timestamp": 1792918921.806005,
+    "decision_id": "4edf8a95-a8f9-4954-86d0-317ae114cdf7",
+    "version": 2,
+    "event": "approved",
+    "actor": "reviewer",
+    "status": "pending",
+    "payload_hash": "788667769840e6b111dbb1e72b3c8a0aa1cd012c2708942613313b0fe4db592c"
+  },
+  {
+    "sequence": 23,
+    "timestamp": 1792918921.8069623,
+    "decision_id": "4edf8a95-a8f9-4954-86d0-317ae114cdf7",
+    "version": 2,
+    "event": "resumed_and_saved",
+    "actor": "system",
+    "status": "completed",
+    "payload_hash": "788667769840e6b111dbb1e72b3c8a0aa1cd012c2708942613313b0fe4db592c"
+  },
+  {
+    "sequence": 24,
+    "timestamp": 1792918921.8274136,
+    "decision_id": "947506a6-00d4-4158-bbd0-075bee06fdb7",
+    "version": 1,
+    "event": "interrupted",
+    "actor": "requester",
+    "status": "pending",
+    "payload_hash": "db5b32762e1001c3022e60350002a170edf947e08e76a74ce42605f40c99c697"
+  },
+  {
+    "sequence": 25,
+    "timestamp": 1792918924.028894,
+    "decision_id": "947506a6-00d4-4158-bbd0-075bee06fdb7",
+    "version": 1,
+    "event": "cancel",
+    "actor": "reviewer",
+    "status": "cancelled",
+    "payload_hash": "db5b32762e1001c3022e60350002a170edf947e08e76a74ce42605f40c99c697"
+  },
+  {
+    "sequence": 26,
+    "timestamp": 1792918924.0705943,
+    "decision_id": "cca2649f-4b3b-452f-83bb-14a8b3f35388",
+    "version": 1,
+    "event": "interrupted",
+    "actor": "requester",
+    "status": "pending",
+    "payload_hash": "16c73e27a286f07c951167d7c219cd2999cba320cbfd8162cdabd40a54970c83"
+  },
+  {
+    "sequence": 27,
+    "timestamp": 1792918925.2858884,
+    "decision_id": "cca2649f-4b3b-452f-83bb-14a8b3f35388",
+    "version": 1,
+    "event": "timeout",
+    "actor": "system",
+    "status": "timed_out",
+    "payload_hash": "16c73e27a286f07c951167d7c219cd2999cba320cbfd8162cdabd40a54970c83"
+  },
+  {
+    "sequence": 28,
+    "timestamp": 1792918925.3422894,
+    "decision_id": "cca2649f-4b3b-452f-83bb-14a8b3f35388",
+    "version": 1,
+    "event": "duplicate_blocked",
+    "actor": "reviewer",
+    "status": "timed_out",
+    "payload_hash": "16c73e27a286f07c951167d7c219cd2999cba320cbfd8162cdabd40a54970c83"
+  },
+  {
+    "sequence": 29,
+    "timestamp": 1792918925.3798501,
+    "decision_id": "373b66f7-cc65-411e-850f-e147c4a20476",
+    "version": 1,
+    "event": "interrupted",
+    "actor": "requester",
+    "status": "pending",
+    "payload_hash": "ee9c962a9a9c7bf4bfdaf4839a4f502c6ee9cff2c048d7b416947e4b2cb2f233"
+  },
+  {
+    "sequence": 30,
+    "timestamp": 1792918929.2815685,
+    "decision_id": "373b66f7-cc65-411e-850f-e147c4a20476",
+    "version": 1,
+    "event": "approved",
+    "actor": "reviewer",
+    "status": "pending",
+    "payload_hash": "ee9c962a9a9c7bf4bfdaf4839a4f502c6ee9cff2c048d7b416947e4b2cb2f233"
+  },
+  {
+    "sequence": 31,
+    "timestamp": 1792918929.2821858,
+    "decision_id": "373b66f7-cc65-411e-850f-e147c4a20476",
+    "version": 1,
+    "event": "action_failed",
+    "actor": "system",
+    "status": "failed",
+    "payload_hash": "ee9c962a9a9c7bf4bfdaf4839a4f502c6ee9cff2c048d7b416947e4b2cb2f233"
+  },
+  {
+    "sequence": 32,
+    "timestamp": 1792918929.3262722,
+    "decision_id": "70d96043-8f54-4045-85b5-8945f3b9bad7",
+    "version": 1,
+    "event": "interrupted",
+    "actor": "requester",
+    "status": "pending",
+    "payload_hash": "54066328ef4035d3ca8e44f8c7dac1864723b8eb05c93bf32460493c6759d840"
+  },
+  {
+    "sequence": 33,
+    "timestamp": 1792919450.302252,
+    "decision_id": "70d96043-8f54-4045-85b5-8945f3b9bad7",
+    "version": 1,
+    "event": "approved",
+    "actor": "reviewer",
+    "status": "pending",
+    "payload_hash": "54066328ef4035d3ca8e44f8c7dac1864723b8eb05c93bf32460493c6759d840"
+  },
+  {
+    "sequence": 34,
+    "timestamp": 1792919450.3037527,
+    "decision_id": "70d96043-8f54-4045-85b5-8945f3b9bad7",
+    "version": 1,
+    "event": "resumed_and_saved",
+    "actor": "system",
+    "status": "completed",
+    "payload_hash": "54066328ef4035d3ca8e44f8c7dac1864723b8eb05c93bf32460493c6759d840"
+  },
+  {
+    "sequence": 35,
+    "timestamp": 1792919450.3487303,
+    "decision_id": "70d96043-8f54-4045-85b5-8945f3b9bad7",
+    "version": 1,
+    "event": "duplicate_blocked",
+    "actor": "reviewer",
+    "status": "completed",
+    "payload_hash": "54066328ef4035d3ca8e44f8c7dac1864723b8eb05c93bf32460493c6759d840"
+  }
+]

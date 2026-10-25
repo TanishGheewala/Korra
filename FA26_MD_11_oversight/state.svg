@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="480" viewBox="0 0 940 480">
+<rect width="940" height="480" fill="white" />
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#334155" /></marker></defs>
+<g font-family="Helvetica" font-size="16" fill="#0f172a">
+<text x="352.02500039339066" y="30" font-size="22">Korra approval workflow</text>
+<g fill="#f1f5f9" stroke="#334155" stroke-width="2">
+<rect x="390" y="55" width="160" height="45" rx="6" />
+<rect x="360" y="160" width="220" height="60" rx="6" />
+<rect x="45" y="315" width="160" height="45" rx="6" />
+<rect x="265" y="315" width="160" height="45" rx="6" />
+<rect x="505" y="315" width="170" height="45" rx="6" />
+<rect x="735" y="315" width="160" height="45" rx="6" />
+<rect x="505" y="415" width="170" height="45" rx="6" />
+</g>
+<g fill="none" stroke="#334155" stroke-width="2">
+<path d="M470,100 V160" />
+<path d="M360,190 H125 V315" />
+<path d="M400,220 V265 H345 V315" />
+<path d="M540,220 V265 H590 V315" />
+<path d="M580,190 H815 V315" />
+<path d="M590,360 V415" />
+<path d="M580,175 H660 V115 H530 V160" />
+</g>
+<text x="422.86400032043457" y="84">Save request</text>
+<text x="400.18400049209595" y="184">Pending checkpoint</text>
+<text x="417.61650028824806" y="206" font-size="13">No database write</text>
+<text x="51.19200038909912" y="344">Rejected / Cancelled</text>
+<text x="309.4320001602173" y="344">Timed out</text>
+<text x="514.4080004692078" y="344">Approved transaction</text>
+<text x="793.2160000801086" y="344">Failed</text>
+<text x="531.7520003318787" y="444">Completed once</text>
+<text x="387.28100031614304" y="134" font-size="13">Persist UUID and arguments</text>
+<text x="192.37300020456314" y="181" font-size="13">Reject / cancel</text>
+<text x="269.35100013017654" y="255" font-size="13">Deadline</text>
+<text x="559.7940001487732" y="251" font-size="13">Approve</text>
+<text x="687.024500399828" y="181" font-size="13">Approved duplicate email</text>
+<text x="560.5485002696514" y="105" font-size="13">Revise: version + 1</text>
+<text x="613.7615005671978" y="391" font-size="13">Insert + checkpoint + audit</text>
+<text x="97.2615005671978" y="415" font-size="13">Invalid / unauthorized / stale:</text>
+<text x="85.69150075316429" y="436" font-size="13">no action, pending state retained</text>
+<text x="74.5115005671978" y="460" font-size="13">Restart reloads the same checkpoint</text>
+</g><polygon points="465,151 470,160 475,151" fill="#334155" /><polygon points="120,306 125,315 130,306" fill="#334155" /><polygon points="340,306 345,315 350,306" fill="#334155" /><polygon points="585,306 590,315 595,306" fill="#334155" /><polygon points="810,306 815,315 820,306" fill="#334155" /><polygon points="585,406 590,415 595,406" fill="#334155" /><polygon points="525,151 530,160 535,151" fill="#334155" /></svg>

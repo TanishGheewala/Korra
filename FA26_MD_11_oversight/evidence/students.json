@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Demo Student",
+    "email": "approve-3a7d8101-69fd-4906-8ebb-da6144de3821@example.invalid",
+    "major": "Computer Engineering",
+    "gpa": 3.6,
+    "enrollment_date": "2026-10-25"
+  },
+  {
+    "id": 2,
+    "name": "Demo Student",
+    "email": "approve-d16def6d-eef4-480d-bc09-7f21b79f7cdd@example.invalid",
+    "major": "Computer Engineering",
+    "gpa": 3.6,
+    "enrollment_date": "2026-10-25"
+  },
+  {
+    "id": 3,
+    "name": "Demo Student",
+    "email": "revise-d16def6d-eef4-480d-bc09-7f21b79f7cdd@example.invalid",
+    "major": "Electrical Engineering",
+    "gpa": 3.6,
+    "enrollment_date": "2026-10-25"
+  },
+  {
+    "id": 4,
+    "name": "Demo Student",
+    "email": "restart-d16def6d-eef4-480d-bc09-7f21b79f7cdd@example.invalid",
+    "major": "Computer Engineering",
+    "gpa": 3.6,
+    "enrollment_date": "2026-10-25"
+  }
+]

@@ -1,0 +1,54 @@
+2026-10-25T09:10:15.877881+00:00 Interactive demonstration after
+PASS: Container ID changed after recreation
+PASS: Pending decision ID, version, arguments and deadline survived restart
+Previous container: 6f9ad3c745dd Current container: 445946612ee2
+
+RESUME: capture 03-restart.png at the prompt, then type approve.
+{
+  "decision_id": "70d96043-8f54-4045-85b5-8945f3b9bad7",
+  "version": 1,
+  "status": "pending",
+  "request": "Save this student",
+  "created_at": 1792918929.32536,
+  "expires_at": 1793005329.32536,
+  "student_id": null,
+  "reason": null,
+  "action": "save_database",
+  "proposed_arguments": {
+    "name": "Demo Student",
+    "email": "restart-d16def6d-eef4-480d-bc09-7f21b79f7cdd@example.invalid",
+    "major": "Computer Engineering",
+    "gpa": 3.6,
+    "enrollment_date": "2026-10-25"
+  },
+  "risk": "Adds one student permanently; does not create enrollments."
+}
+Decision [approve/reject/revise/cancel]: {
+  "decision_id": "70d96043-8f54-4045-85b5-8945f3b9bad7",
+  "version": 1,
+  "status": "completed",
+  "request": "Save this student",
+  "created_at": 1792918929.32536,
+  "expires_at": 1793005329.32536,
+  "student_id": 4,
+  "reason": null,
+  "action": "save_database",
+  "proposed_arguments": {
+    "name": "Demo Student",
+    "email": "restart-d16def6d-eef4-480d-bc09-7f21b79f7cdd@example.invalid",
+    "major": "Computer Engineering",
+    "gpa": 3.6,
+    "enrollment_date": "2026-10-25"
+  },
+  "risk": "Adds one student permanently; does not create enrollments."
+}
+PASS: Resumed the preserved decision after restart
+PASS: Restarted request also executes only once
+PASS: Exactly three intended records were inserted
+PASS: Audit contains only allowed metadata fields
+PASS: No reviewer token or configured API key in audit
+
+FINAL: PASS
+Approve / reject / revise / cancel / timeout / invalid / unauthorized / duplicate / restart: PASS
+Audit secrets found: false
+Evidence saved in evidence/. Capture 04-final.png now.

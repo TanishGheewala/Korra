@@ -1,0 +1,4 @@
+hostname=6f9ad3c745dd
+docker=True
+python=3.12.15
+checkpoint=/app/data/korra.db

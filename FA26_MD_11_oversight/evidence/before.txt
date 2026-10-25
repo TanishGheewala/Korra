@@ -1,0 +1,274 @@
+2026-10-25T09:01:47.731697+00:00 Interactive demonstration before
+PASS: Paused before the student was inserted
+
+APPROVAL: type approve. Capture 01-paused.png when the decision prompt appears.
+{
+  "decision_id": "8afefd53-d7ff-433c-a643-7b8e29f9a7b8",
+  "version": 1,
+  "status": "pending",
+  "request": "Save this student",
+  "created_at": 1792918907.7384079,
+  "expires_at": 1792919507.7384079,
+  "student_id": null,
+  "reason": null,
+  "action": "save_database",
+  "proposed_arguments": {
+    "name": "Demo Student",
+    "email": "approve-d16def6d-eef4-480d-bc09-7f21b79f7cdd@example.invalid",
+    "major": "Computer Engineering",
+    "gpa": 3.6,
+    "enrollment_date": "2026-10-25"
+  },
+  "risk": "Adds one student permanently; does not create enrollments."
+}
+Decision [approve/reject/revise/cancel]: {
+  "decision_id": "8afefd53-d7ff-433c-a643-7b8e29f9a7b8",
+  "version": 1,
+  "status": "completed",
+  "request": "Save this student",
+  "created_at": 1792918907.7384079,
+  "expires_at": 1792919507.7384079,
+  "student_id": 2,
+  "reason": null,
+  "action": "save_database",
+  "proposed_arguments": {
+    "name": "Demo Student",
+    "email": "approve-d16def6d-eef4-480d-bc09-7f21b79f7cdd@example.invalid",
+    "major": "Computer Engineering",
+    "gpa": 3.6,
+    "enrollment_date": "2026-10-25"
+  },
+  "risk": "Adds one student permanently; does not create enrollments."
+}
+PASS: Human approval saved one student
+PASS: Repeated approval blocked; no second insert
+PASS: Unauthorized and invalid decisions blocked
+PASS: Invalid decisions left the request pending
+
+REJECTION: type reject.
+{
+  "decision_id": "97125fa2-9165-43a4-9816-d000d5df0b4e",
+  "version": 1,
+  "status": "pending",
+  "request": "Save this student",
+  "created_at": 1792918911.23647,
+  "expires_at": 1792919511.23647,
+  "student_id": null,
+  "reason": null,
+  "action": "save_database",
+  "proposed_arguments": {
+    "name": "Demo Student",
+    "email": "reject-d16def6d-eef4-480d-bc09-7f21b79f7cdd@example.invalid",
+    "major": "Computer Engineering",
+    "gpa": 3.6,
+    "enrollment_date": "2026-10-25"
+  },
+  "risk": "Adds one student permanently; does not create enrollments."
+}
+Decision [approve/reject/revise/cancel]: {
+  "decision_id": "97125fa2-9165-43a4-9816-d000d5df0b4e",
+  "version": 1,
+  "status": "rejected",
+  "request": "Save this student",
+  "created_at": 1792918911.23647,
+  "expires_at": 1792919511.23647,
+  "student_id": null,
+  "reason": null,
+  "action": "save_database",
+  "proposed_arguments": {
+    "name": "Demo Student",
+    "email": "reject-d16def6d-eef4-480d-bc09-7f21b79f7cdd@example.invalid",
+    "major": "Computer Engineering",
+    "gpa": 3.6,
+    "enrollment_date": "2026-10-25"
+  },
+  "risk": "Adds one student permanently; does not create enrollments."
+}
+PASS: Rejection stopped the write
+
+REVISION: type revise, then enter {"major":"Electrical Engineering"}.
+{
+  "decision_id": "4edf8a95-a8f9-4954-86d0-317ae114cdf7",
+  "version": 1,
+  "status": "pending",
+  "request": "Save this student",
+  "created_at": 1792918912.5627153,
+  "expires_at": 1792919512.5627153,
+  "student_id": null,
+  "reason": null,
+  "action": "save_database",
+  "proposed_arguments": {
+    "name": "Demo Student",
+    "email": "revise-d16def6d-eef4-480d-bc09-7f21b79f7cdd@example.invalid",
+    "major": "Computer Engineering",
+    "gpa": 3.6,
+    "enrollment_date": "2026-10-25"
+  },
+  "risk": "Adds one student permanently; does not create enrollments."
+}
+Decision [approve/reject/revise/cancel]: Changes as JSON, e.g. {"major":"Engineering"}: {
+  "decision_id": "4edf8a95-a8f9-4954-86d0-317ae114cdf7",
+  "version": 2,
+  "status": "pending",
+  "request": "Save this student",
+  "created_at": 1792918912.5627153,
+  "expires_at": 1792919512.5627153,
+  "student_id": null,
+  "reason": null,
+  "action": "save_database",
+  "proposed_arguments": {
+    "name": "Demo Student",
+    "email": "revise-d16def6d-eef4-480d-bc09-7f21b79f7cdd@example.invalid",
+    "major": "Electrical Engineering",
+    "gpa": 3.6,
+    "enrollment_date": "2026-10-25"
+  },
+  "risk": "Adds one student permanently; does not create enrollments."
+}
+PASS: Revision saved new arguments but did not execute
+PASS: Approval for the old version blocked
+
+REVISED APPROVAL: inspect the new arguments and type approve.
+{
+  "decision_id": "4edf8a95-a8f9-4954-86d0-317ae114cdf7",
+  "version": 2,
+  "status": "pending",
+  "request": "Save this student",
+  "created_at": 1792918912.5627153,
+  "expires_at": 1792919512.5627153,
+  "student_id": null,
+  "reason": null,
+  "action": "save_database",
+  "proposed_arguments": {
+    "name": "Demo Student",
+    "email": "revise-d16def6d-eef4-480d-bc09-7f21b79f7cdd@example.invalid",
+    "major": "Electrical Engineering",
+    "gpa": 3.6,
+    "enrollment_date": "2026-10-25"
+  },
+  "risk": "Adds one student permanently; does not create enrollments."
+}
+Decision [approve/reject/revise/cancel]: {
+  "decision_id": "4edf8a95-a8f9-4954-86d0-317ae114cdf7",
+  "version": 2,
+  "status": "completed",
+  "request": "Save this student",
+  "created_at": 1792918912.5627153,
+  "expires_at": 1792919512.5627153,
+  "student_id": 3,
+  "reason": null,
+  "action": "save_database",
+  "proposed_arguments": {
+    "name": "Demo Student",
+    "email": "revise-d16def6d-eef4-480d-bc09-7f21b79f7cdd@example.invalid",
+    "major": "Electrical Engineering",
+    "gpa": 3.6,
+    "enrollment_date": "2026-10-25"
+  },
+  "risk": "Adds one student permanently; does not create enrollments."
+}
+PASS: Revised request approved and saved
+PASS: Database contains the revised values
+
+CANCELLATION: type cancel.
+{
+  "decision_id": "947506a6-00d4-4158-bbd0-075bee06fdb7",
+  "version": 1,
+  "status": "pending",
+  "request": "Save this student",
+  "created_at": 1792918921.8268902,
+  "expires_at": 1792919521.8268902,
+  "student_id": null,
+  "reason": null,
+  "action": "save_database",
+  "proposed_arguments": {
+    "name": "Demo Student",
+    "email": "cancel-d16def6d-eef4-480d-bc09-7f21b79f7cdd@example.invalid",
+    "major": "Computer Engineering",
+    "gpa": 3.6,
+    "enrollment_date": "2026-10-25"
+  },
+  "risk": "Adds one student permanently; does not create enrollments."
+}
+Decision [approve/reject/revise/cancel]: {
+  "decision_id": "947506a6-00d4-4158-bbd0-075bee06fdb7",
+  "version": 1,
+  "status": "cancelled",
+  "request": "Save this student",
+  "created_at": 1792918921.8268902,
+  "expires_at": 1792919521.8268902,
+  "student_id": null,
+  "reason": null,
+  "action": "save_database",
+  "proposed_arguments": {
+    "name": "Demo Student",
+    "email": "cancel-d16def6d-eef4-480d-bc09-7f21b79f7cdd@example.invalid",
+    "major": "Computer Engineering",
+    "gpa": 3.6,
+    "enrollment_date": "2026-10-25"
+  },
+  "risk": "Adds one student permanently; does not create enrollments."
+}
+PASS: Cancellation stopped the write
+PASS: Expired request did not execute
+PASS: Late approval blocked
+
+FAILURE: this email already exists. Type approve to test safe failure.
+{
+  "decision_id": "373b66f7-cc65-411e-850f-e147c4a20476",
+  "version": 1,
+  "status": "pending",
+  "request": "Save this student",
+  "created_at": 1792918925.3775995,
+  "expires_at": 1792919525.3775995,
+  "student_id": null,
+  "reason": null,
+  "action": "save_database",
+  "proposed_arguments": {
+    "name": "Demo Student",
+    "email": "approve-d16def6d-eef4-480d-bc09-7f21b79f7cdd@example.invalid",
+    "major": "Computer Engineering",
+    "gpa": 3.6,
+    "enrollment_date": "2026-10-25"
+  },
+  "risk": "Adds one student permanently; does not create enrollments."
+}
+Decision [approve/reject/revise/cancel]: {
+  "decision_id": "373b66f7-cc65-411e-850f-e147c4a20476",
+  "version": 1,
+  "status": "failed",
+  "request": "Save this student",
+  "created_at": 1792918925.3775995,
+  "expires_at": 1792919525.3775995,
+  "student_id": null,
+  "reason": "duplicate_email",
+  "action": "save_database",
+  "proposed_arguments": {
+    "name": "Demo Student",
+    "email": "approve-d16def6d-eef4-480d-bc09-7f21b79f7cdd@example.invalid",
+    "major": "Computer Engineering",
+    "gpa": 3.6,
+    "enrollment_date": "2026-10-25"
+  },
+  "risk": "Adds one student permanently; does not create enrollments."
+}
+PASS: Duplicate email failed without another insert
+PASS: Only the approved and revised records were added
+
+BEFORE RESTART: PASS
+paused: pending
+approval: completed
+duplicate_approval: blocked
+unauthorized: unauthorized
+invalid: invalid
+rejection: rejected
+stale: stale
+revision_pending: pending
+revision_completed: completed
+cancellation: cancelled
+timeout: timed_out
+late_approval: blocked
+action_failure: failed
+Restart decision: 70d96043-8f54-4045-85b5-8945f3b9bad7 version: 1 status: pending
+Container: 6f9ad3c745dd
+Capture 02-outcomes.png now. Then recreate the container and run demo.py after.

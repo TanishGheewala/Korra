@@ -1,0 +1,222 @@
+{
+  "run_id": "d16def6d-eef4-480d-bc09-7f21b79f7cdd",
+  "started_at": "2026-10-25T09:01:47.737654+00:00",
+  "hostname_before": "6f9ad3c745dd",
+  "docker_before": true,
+  "initial_count": 1,
+  "checks": {
+    "paused": {
+      "decision_id": "8afefd53-d7ff-433c-a643-7b8e29f9a7b8",
+      "version": 1,
+      "status": "pending",
+      "request": "Save this student",
+      "created_at": 1792918907.7384079,
+      "expires_at": 1792919507.7384079,
+      "student_id": null,
+      "reason": null,
+      "action": "save_database",
+      "proposed_arguments": {
+        "name": "Demo Student",
+        "email": "approve-d16def6d-eef4-480d-bc09-7f21b79f7cdd@example.invalid",
+        "major": "Computer Engineering",
+        "gpa": 3.6,
+        "enrollment_date": "2026-10-25"
+      },
+      "risk": "Adds one student permanently; does not create enrollments."
+    },
+    "approval": {
+      "decision_id": "8afefd53-d7ff-433c-a643-7b8e29f9a7b8",
+      "version": 1,
+      "status": "completed",
+      "request": "Save this student",
+      "created_at": 1792918907.7384079,
+      "expires_at": 1792919507.7384079,
+      "student_id": 2,
+      "reason": null,
+      "action": "save_database",
+      "proposed_arguments": {
+        "name": "Demo Student",
+        "email": "approve-d16def6d-eef4-480d-bc09-7f21b79f7cdd@example.invalid",
+        "major": "Computer Engineering",
+        "gpa": 3.6,
+        "enrollment_date": "2026-10-25"
+      },
+      "risk": "Adds one student permanently; does not create enrollments."
+    },
+    "duplicate_approval": {
+      "status": "blocked",
+      "current_status": "completed"
+    },
+    "unauthorized": {
+      "status": "unauthorized"
+    },
+    "invalid": {
+      "status": "invalid"
+    },
+    "rejection": {
+      "decision_id": "97125fa2-9165-43a4-9816-d000d5df0b4e",
+      "version": 1,
+      "status": "rejected",
+      "request": "Save this student",
+      "created_at": 1792918911.23647,
+      "expires_at": 1792919511.23647,
+      "student_id": null,
+      "reason": null,
+      "action": "save_database",
+      "proposed_arguments": {
+        "name": "Demo Student",
+        "email": "reject-d16def6d-eef4-480d-bc09-7f21b79f7cdd@example.invalid",
+        "major": "Computer Engineering",
+        "gpa": 3.6,
+        "enrollment_date": "2026-10-25"
+      },
+      "risk": "Adds one student permanently; does not create enrollments."
+    },
+    "stale": {
+      "status": "stale",
+      "version": 2
+    },
+    "revision_pending": {
+      "decision_id": "4edf8a95-a8f9-4954-86d0-317ae114cdf7",
+      "version": 2,
+      "status": "pending",
+      "request": "Save this student",
+      "created_at": 1792918912.5627153,
+      "expires_at": 1792919512.5627153,
+      "student_id": null,
+      "reason": null,
+      "action": "save_database",
+      "proposed_arguments": {
+        "name": "Demo Student",
+        "email": "revise-d16def6d-eef4-480d-bc09-7f21b79f7cdd@example.invalid",
+        "major": "Electrical Engineering",
+        "gpa": 3.6,
+        "enrollment_date": "2026-10-25"
+      },
+      "risk": "Adds one student permanently; does not create enrollments."
+    },
+    "revision_completed": {
+      "decision_id": "4edf8a95-a8f9-4954-86d0-317ae114cdf7",
+      "version": 2,
+      "status": "completed",
+      "request": "Save this student",
+      "created_at": 1792918912.5627153,
+      "expires_at": 1792919512.5627153,
+      "student_id": 3,
+      "reason": null,
+      "action": "save_database",
+      "proposed_arguments": {
+        "name": "Demo Student",
+        "email": "revise-d16def6d-eef4-480d-bc09-7f21b79f7cdd@example.invalid",
+        "major": "Electrical Engineering",
+        "gpa": 3.6,
+        "enrollment_date": "2026-10-25"
+      },
+      "risk": "Adds one student permanently; does not create enrollments."
+    },
+    "cancellation": {
+      "decision_id": "947506a6-00d4-4158-bbd0-075bee06fdb7",
+      "version": 1,
+      "status": "cancelled",
+      "request": "Save this student",
+      "created_at": 1792918921.8268902,
+      "expires_at": 1792919521.8268902,
+      "student_id": null,
+      "reason": null,
+      "action": "save_database",
+      "proposed_arguments": {
+        "name": "Demo Student",
+        "email": "cancel-d16def6d-eef4-480d-bc09-7f21b79f7cdd@example.invalid",
+        "major": "Computer Engineering",
+        "gpa": 3.6,
+        "enrollment_date": "2026-10-25"
+      },
+      "risk": "Adds one student permanently; does not create enrollments."
+    },
+    "timeout": {
+      "decision_id": "cca2649f-4b3b-452f-83bb-14a8b3f35388",
+      "version": 1,
+      "status": "timed_out",
+      "request": "Save this student",
+      "created_at": 1792918924.0698302,
+      "expires_at": 1792918925.0698302,
+      "student_id": null,
+      "reason": "deadline_elapsed",
+      "action": "save_database",
+      "proposed_arguments": {
+        "name": "Demo Student",
+        "email": "timeout-d16def6d-eef4-480d-bc09-7f21b79f7cdd@example.invalid",
+        "major": "Computer Engineering",
+        "gpa": 3.6,
+        "enrollment_date": "2026-10-25"
+      },
+      "risk": "Adds one student permanently; does not create enrollments."
+    },
+    "late_approval": {
+      "status": "blocked",
+      "current_status": "timed_out"
+    },
+    "action_failure": {
+      "decision_id": "373b66f7-cc65-411e-850f-e147c4a20476",
+      "version": 1,
+      "status": "failed",
+      "request": "Save this student",
+      "created_at": 1792918925.3775995,
+      "expires_at": 1792919525.3775995,
+      "student_id": null,
+      "reason": "duplicate_email",
+      "action": "save_database",
+      "proposed_arguments": {
+        "name": "Demo Student",
+        "email": "approve-d16def6d-eef4-480d-bc09-7f21b79f7cdd@example.invalid",
+        "major": "Computer Engineering",
+        "gpa": 3.6,
+        "enrollment_date": "2026-10-25"
+      },
+      "risk": "Adds one student permanently; does not create enrollments."
+    }
+  },
+  "restart": {
+    "decision_id": "70d96043-8f54-4045-85b5-8945f3b9bad7",
+    "version": 1,
+    "status": "pending",
+    "request": "Save this student",
+    "created_at": 1792918929.32536,
+    "expires_at": 1793005329.32536,
+    "student_id": null,
+    "reason": null,
+    "action": "save_database",
+    "proposed_arguments": {
+      "name": "Demo Student",
+      "email": "restart-d16def6d-eef4-480d-bc09-7f21b79f7cdd@example.invalid",
+      "major": "Computer Engineering",
+      "gpa": 3.6,
+      "enrollment_date": "2026-10-25"
+    },
+    "risk": "Adds one student permanently; does not create enrollments."
+  },
+  "status": "PASS",
+  "hostname_after": "445946612ee2",
+  "docker_after": true,
+  "restart_completed": {
+    "decision_id": "70d96043-8f54-4045-85b5-8945f3b9bad7",
+    "version": 1,
+    "status": "completed",
+    "request": "Save this student",
+    "created_at": 1792918929.32536,
+    "expires_at": 1793005329.32536,
+    "student_id": 4,
+    "reason": null,
+    "action": "save_database",
+    "proposed_arguments": {
+      "name": "Demo Student",
+      "email": "restart-d16def6d-eef4-480d-bc09-7f21b79f7cdd@example.invalid",
+      "major": "Computer Engineering",
+      "gpa": 3.6,
+      "enrollment_date": "2026-10-25"
+    },
+    "risk": "Adds one student permanently; does not create enrollments."
+  },
+  "finished_at": "2026-10-25T09:10:50.418526+00:00",
+  "audit_secrets_found": false
+}

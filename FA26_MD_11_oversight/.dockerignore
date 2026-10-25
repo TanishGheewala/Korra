@@ -1,0 +1,5 @@
+.env*
+data/
+evidence/
+__pycache__/
+*.zip

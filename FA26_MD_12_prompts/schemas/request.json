@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["request", "context"],
+  "properties": {
+    "request": {"type": "string", "minLength": 1, "maxLength": 2000, "pattern": "\\S"},
+    "context": {
+      "type": "object", "additionalProperties": false, "required": ["course", "term"],
+      "properties": {
+        "course": {"type": "string", "minLength": 1, "maxLength": 100, "pattern": "\\S"},
+        "term": {"type": "string", "minLength": 1, "maxLength": 60, "pattern": "\\S"}
+      }
+    }
+  }
+}

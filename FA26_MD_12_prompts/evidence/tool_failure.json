@@ -1,0 +1,32 @@
+{
+  "request_id": "edcd79fa-ee12-47da-94f8-12cea543169b",
+  "status": "error",
+  "message": "The operation failed. No automatic retry was made.",
+  "data": {},
+  "trace": [
+    {
+      "step": 1,
+      "stage": "select",
+      "action": "read_database",
+      "code": "lookup"
+    },
+    {
+      "step": 1,
+      "stage": "act",
+      "action": "read_database",
+      "code": "started"
+    },
+    {
+      "step": 1,
+      "stage": "observe",
+      "action": "read_database",
+      "code": "tool_error"
+    },
+    {
+      "step": 1,
+      "stage": "stop",
+      "action": "none",
+      "code": "tool_error"
+    }
+  ]
+}

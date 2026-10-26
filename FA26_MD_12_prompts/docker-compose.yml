@@ -1,0 +1,20 @@
+name: korra12
+services:
+  korra:
+    build: .
+    environment:
+      GOOGLE_API_KEY: ${GOOGLE_API_KEY:-}
+      GEMINI_MODEL: ${GEMINI_MODEL:-gemini-3.5-flash-lite}
+      KORRA_COURSE: COMPE475
+      KORRA_TERM: Fall 2026
+    volumes:
+      - korra_data:/app/data
+      - ./evidence:/app/evidence
+    healthcheck:
+      test: ["CMD", "python", "-c", "from oversight import Store; s=Store(); s.students(); assert s.token_path.exists()"]
+      interval: 2s
+      timeout: 2s
+      retries: 15
+    stop_grace_period: 2s
+volumes:
+  korra_data:

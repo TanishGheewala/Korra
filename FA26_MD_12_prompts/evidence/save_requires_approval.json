@@ -1,0 +1,42 @@
+{
+  "request_id": "3f589557-1691-4063-b07a-42b917472994",
+  "status": "pending",
+  "message": "Human approval required. No student was inserted.",
+  "data": {
+    "decision_id": "c1a0c660-c149-445c-a0fd-ae9f20c6f667",
+    "version": 1,
+    "proposed_arguments": {
+      "name": "Casey Demo",
+      "email": "casey@example.invalid",
+      "major": "Engineering",
+      "gpa": 3.6,
+      "enrollment_date": "2026-10-25"
+    }
+  },
+  "trace": [
+    {
+      "step": 1,
+      "stage": "select",
+      "action": "save_database",
+      "code": "new_student"
+    },
+    {
+      "step": 1,
+      "stage": "act",
+      "action": "save_database",
+      "code": "started"
+    },
+    {
+      "step": 1,
+      "stage": "observe",
+      "action": "save_database",
+      "code": "approval_pending"
+    },
+    {
+      "step": 1,
+      "stage": "stop",
+      "action": "none",
+      "code": "approval_required"
+    }
+  ]
+}

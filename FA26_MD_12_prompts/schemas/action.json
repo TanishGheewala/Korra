@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["action", "arguments", "reason_code"],
+  "properties": {
+    "action": {"type": "string", "enum": ["read_database", "save_database", "finish", "clarify", "refuse"]},
+    "reason_code": {"type": "string", "enum": ["lookup", "new_student", "done", "out_of_scope", "missing_fields", "unsafe_request"]},
+    "arguments": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "name": {"type": "string", "maxLength": 200},
+        "email": {"type": "string", "maxLength": 254},
+        "major": {"type": "string", "maxLength": 200},
+        "gpa": {"type": "number", "minimum": 0, "maximum": 4},
+        "enrollment_date": {"type": "string", "maxLength": 10}
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "request_id": "1245d278-b9e2-4193-b5da-e17f406b3ad3",
+  "status": "refused",
+  "message": "This request is outside the permitted actions.",
+  "data": {},
+  "trace": [
+    {
+      "step": 1,
+      "stage": "select",
+      "action": "refuse",
+      "code": "unsafe_request"
+    },
+    {
+      "step": 1,
+      "stage": "stop",
+      "action": "none",
+      "code": "unsafe_request"
+    }
+  ]
+}

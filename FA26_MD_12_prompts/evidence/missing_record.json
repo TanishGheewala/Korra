@@ -1,0 +1,40 @@
+{
+  "request_id": "e7fa99c3-497c-4d46-b6d1-4206c9fbe8ae",
+  "status": "success",
+  "message": "Records retrieved.",
+  "data": {
+    "students": []
+  },
+  "trace": [
+    {
+      "step": 1,
+      "stage": "select",
+      "action": "read_database",
+      "code": "lookup"
+    },
+    {
+      "step": 1,
+      "stage": "act",
+      "action": "read_database",
+      "code": "started"
+    },
+    {
+      "step": 1,
+      "stage": "observe",
+      "action": "read_database",
+      "code": "no_records"
+    },
+    {
+      "step": 2,
+      "stage": "select",
+      "action": "finish",
+      "code": "done"
+    },
+    {
+      "step": 2,
+      "stage": "stop",
+      "action": "none",
+      "code": "completed"
+    }
+  ]
+}

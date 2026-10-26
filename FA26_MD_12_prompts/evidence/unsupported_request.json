@@ -1,0 +1,20 @@
+{
+  "request_id": "ad912d32-604f-46d6-862f-4893512c33c0",
+  "status": "refused",
+  "message": "This request is outside the permitted actions.",
+  "data": {},
+  "trace": [
+    {
+      "step": 1,
+      "stage": "select",
+      "action": "refuse",
+      "code": "out_of_scope"
+    },
+    {
+      "step": 1,
+      "stage": "stop",
+      "action": "none",
+      "code": "out_of_scope"
+    }
+  ]
+}

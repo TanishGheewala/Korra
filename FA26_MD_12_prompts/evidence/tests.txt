@@ -1,0 +1,28 @@
+test_action_limit (test_agent.AgentTests.test_action_limit) ... ok
+test_finish_requires_observation (test_agent.AgentTests.test_finish_requires_observation) ... ok
+test_human_approval_still_works (test_agent.AgentTests.test_human_approval_still_works) ... ok
+test_invalid_reason_and_arguments (test_agent.AgentTests.test_invalid_reason_and_arguments) ... ok
+test_malformed_file_has_structured_response (test_agent.AgentTests.test_malformed_file_has_structured_response) ... ok
+test_malformed_model_response (test_agent.AgentTests.test_malformed_model_response) ... ok
+test_malformed_runtime (test_agent.AgentTests.test_malformed_runtime) ... ok
+test_missing_fields (test_agent.AgentTests.test_missing_fields) ... ok
+test_missing_key_does_not_call_network (test_agent.AgentTests.test_missing_key_does_not_call_network) ... ok
+test_no_private_reasoning_field (test_agent.AgentTests.test_no_private_reasoning_field) ... ok
+test_observation_cannot_authorize_save (test_agent.AgentTests.test_observation_cannot_authorize_save) ... ok
+test_provider_error_stops (test_agent.AgentTests.test_provider_error_stops) ... ok
+test_provider_request_separates_policy_and_key (test_agent.AgentTests.test_provider_request_separates_policy_and_key) ... ok
+test_read_observe_finish (test_agent.AgentTests.test_read_observe_finish) ... ok
+test_refusal (test_agent.AgentTests.test_refusal) ... ok
+test_request_length_boundary (test_agent.AgentTests.test_request_length_boundary) ... ok
+test_response_schema (test_agent.AgentTests.test_response_schema) ... ok
+test_save_preserves_approval_gate (test_agent.AgentTests.test_save_preserves_approval_gate) ... ok
+test_secret_redaction (test_agent.AgentTests.test_secret_redaction) ... ok
+test_template_keeps_policy_separate (test_agent.AgentTests.test_template_keeps_policy_separate) ... ok
+test_tool_failure (test_agent.AgentTests.test_tool_failure) ... ok
+test_unapproved_action (test_agent.AgentTests.test_unapproved_action) ... ok
+test_uncertainty (test_agent.AgentTests.test_uncertainty) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.589s
+
+OK

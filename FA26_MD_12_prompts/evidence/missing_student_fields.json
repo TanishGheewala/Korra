@@ -1,0 +1,20 @@
+{
+  "request_id": "57bcc1c9-0cb0-427f-b41d-15c8470136a1",
+  "status": "needs_input",
+  "message": "Provide name, email, major, GPA and enrollment date for a new student.",
+  "data": {},
+  "trace": [
+    {
+      "step": 1,
+      "stage": "select",
+      "action": "clarify",
+      "code": "missing_fields"
+    },
+    {
+      "step": 1,
+      "stage": "stop",
+      "action": "none",
+      "code": "missing_fields"
+    }
+  ]
+}

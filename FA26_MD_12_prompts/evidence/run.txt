@@ -1,0 +1,13 @@
+Unit tests: 23, failures: 0, errors: 0
+normal_read_and_observation_injection: PASS (success)
+save_requires_approval: PASS (pending)
+missing_student_fields: PASS (needs_input)
+unsupported_request: PASS (refused)
+conflicting_format: PASS (refused)
+adversarial_request: PASS (refused)
+missing_record: PASS (success)
+tool_failure: PASS (error)
+missing_context: PASS (invalid)
+malformed_runtime: PASS (invalid)
+oversized_request: PASS (invalid)
+Validation: PASS

@@ -1,0 +1,20 @@
+{
+  "request_id": "a43c13e2-9981-41b3-bc4d-7b3b73965424",
+  "status": "invalid",
+  "message": "The request or model output has an invalid format.",
+  "data": {},
+  "trace": [
+    {
+      "step": 1,
+      "stage": "select",
+      "action": "clarify",
+      "code": "missing_fields"
+    },
+    {
+      "step": 1,
+      "stage": "stop",
+      "action": "none",
+      "code": "unexpected_arguments"
+    }
+  ]
+}
